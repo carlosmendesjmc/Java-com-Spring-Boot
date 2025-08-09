@@ -135,7 +135,8 @@ public class User {
         this.department = department;
     }
 }
-4️⃣ Repositórios
+
+## **4️⃣ Repositórios
 **UserRepository.java**
 
 package com.Spring01.userdept01.repositories;
@@ -146,7 +147,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface UserRepository extends JpaRepository<User, Long> {
 
 }
-5️⃣ Controlador REST
+
+## **5️⃣ Controlador REST
 **UserController.java**
 
 package com.Spring01.userdept01.controllers;
@@ -184,7 +186,8 @@ public class UserController {
     }
 
 }
-6️⃣ Configuração do Banco H2 (acesso e propriedades)
+
+## **6️⃣ Configuração do Banco H2 (acesso e propriedades)
 **No arquivo src/main/resources/application.properties:**
 
 # Dados de conexão com o banco H2
@@ -200,7 +203,7 @@ spring.h2.console.path=/h2-console
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 
-7️⃣ Populando o Banco de Dados Automaticamente
+## **7️⃣ Populando o Banco de Dados Automaticamente
 **Você pode popular o banco de dados usando o arquivo import.sql (criado em src/main/resources):**
 
 INSERT INTO tb_department(name) VALUES ('Gestão');
@@ -212,7 +215,7 @@ INSERT INTO tb_user(department_id, name, email) VALUES (2, 'Alex', 'alex@gmail.c
 INSERT INTO tb_user(department_id, name, email) VALUES (2, 'Ana', 'ana@gmail.com');
 O Spring Boot executa automaticamente o import.sql ao iniciar a aplicação.
 
-8️⃣ Testando no Postman
+## **8️⃣ Testando no Postman
 **GET - Listar todos usuários**
 GET http://localhost:8080/users
 
@@ -231,7 +234,8 @@ Content-Type: application/json
         "id": 1
     }
 }
-9️⃣ Console do Banco H2
+
+## **9️⃣ Console do Banco H2
 Acesse:
 
 http://localhost:8080/h2-console
