@@ -18,6 +18,7 @@ Este projeto é um exemplo simples de aplicação Spring Boot usando arquitetura
 ## 1️⃣ Criação do Projeto no Spring Initializr
 
 Acesse [https://start.spring.io/](https://start.spring.io/) e configure:
+<img width="1006" height="609" alt="image" src="https://github.com/user-attachments/assets/afe9cad4-06af-483e-b4bc-72f964d364b8" />
 
 - **Project:** Maven
 - **Language:** Java
